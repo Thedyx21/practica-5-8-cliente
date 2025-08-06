@@ -79,7 +79,7 @@
 
     // Cargar proyectos desde el backend
     async function cargarProyectos() {
-      const res = await fetch('/api/proyectos');
+      const res = await fetch('http://localhost:3000/api/proyectos');
       const proyectos = await res.json();
       const tbody = document.getElementById('tbody-proyectos');
       tbody.innerHTML = '';
